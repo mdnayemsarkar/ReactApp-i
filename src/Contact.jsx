@@ -1,13 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Header from "./Header";
-// import Card from "./Card";
-// import Sdata from "./Sdata"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function contact() {
+  const notify = () => {
+    toast(
+      "Submited Your Concern succesfully!                         (Thank you)",
+      {
+        position: "top-center",
+      }
+    );
+  };
   return (
     <>
-    <Header/>
+      <Header />
       <div className="flex justify-center items-center h-screen bg-gray-100">
         <div className="w-full max-w-md">
           <div className="flex justify-center mb-4 text-3xl font-semibold text-green-400">
@@ -54,19 +62,26 @@ function contact() {
               ></textarea>
             </div>
             <div className="flex items-center justify-center">
-              <NavLink to="/">
+              <NavLink to="">
                 <button
                   className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="button"
-                
+                  onClick={notify}
                 >
                   Send Message
                 </button>
               </NavLink>
             </div>
+            <div className="gobk mt-6">
+              <NavLink to="/">
+                To visit Your Home Page ??
+                <span className="text-blue-500"> Click Here...</span>
+              </NavLink>
+            </div>
           </form>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 }

@@ -15,11 +15,11 @@ function Service() {
       <div className="hdr flex justify-center mt-14 mb-8 text-3xl font-bold text-green-400">
         This is our Services Page
       </div>
-      <div className="grid grid-cols-3 gap-4 p-14">
+      <div className="grid grid-cols-3 gap-8 p-14">
         {Sdata.map((val, ind) => {
           return <Card key={ind} imgsrc={val.imgsrc} title={val.title} />;
         })}
-
+ 
         {/* <!-- Card 1 --> */}
         {/* <div className="bg-white rounded-lg overflow-hidden shadow-md">
           <img
