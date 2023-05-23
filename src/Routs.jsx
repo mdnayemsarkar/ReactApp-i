@@ -20,6 +20,11 @@ function Routs() {
       exact: true,
     },
     {
+      path: "/about/contact",
+      element: <Contact />,
+      exact: true,
+    },
+    {
       path: "/services",
       element: <Services />,
       exact: true,
@@ -29,13 +34,18 @@ function Routs() {
       element: <Contact />,
       exact: true,
     },
+    {
+      path: "/contact/about",
+      element: <About  />,
+      exact: true,
+    },
+    {
+      path: "/contact/about/services",
+      element: <Services />,
+      exact: true,
+    },
   ]);
   return <RouterProvider router={router} />;
 }
 
 export default Routs;
-
-
-
-
-

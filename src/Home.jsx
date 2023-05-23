@@ -1,5 +1,6 @@
 import React from "react";
-import web from "../src/image/david-boca-ZqJqC-S9sfc-unsplash.jpg";
+// import web from "../src/image/david-boca-ZqJqC-S9sfc-unsplash.jpg";
+import web from "../src/image/Nayeem.png";
 import Header from "./Header";
 import { NavLink } from "react-router-dom";
 
@@ -13,12 +14,12 @@ const Home = () => {
         {/* ...................body section starts here....................... */}
 
         <div className="container grid grid-cols-2">
-          <div className="lft-cntnr flex flex-col justify-center items-center mt-40 font-semibold">
-            <div className="cntnt-i text-4xl">
+          <div className="lft-cntnr flex flex-col justify-center items-center font-semibold">
+            <div className="cntnt-i text-5xl font-bold">
               Grow Your buisness <br /> <span className="pl-20">with</span>
               <br />
               <span className="pl-6 text-blue-400 hover:text-5xl">
-                Nyem Sarkar
+                Nayem Sarkar
               </span>
             </div>
             <div className="cntnt-ii font-light text-gray-800 mt-6">
@@ -38,7 +39,7 @@ const Home = () => {
           <div className="right cntnr ">
             <img
               src={web}
-              className="mt-[20%] pl-11 rounded-xl h-96 w-3/4 animate-pulse  ease-in-out duration-1000  hover:scale-150"
+              className="mt-[20%] pl-11 rounded-xl h-1/2 w-2/3 animate-pulse  ease-in-out duration-1000  hover:scale-150"
               alt=""
             />
           </div>
