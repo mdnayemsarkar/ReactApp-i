@@ -7,26 +7,24 @@ import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <body>
+      <body className=" bg-black text-white h-screen sm:bg-black sm:text-white sm:h-screen sm:w-screen">
         <Header />
         {/* ....................header part ends here ......................*/}
 
         {/* ...................body section starts here....................... */}
 
-        <div className="container grid grid-cols-2">
+        <div className="bg-black container grid grid-cols-1 items-center mt-10  md:grid md:grid-cols-2 md:items-center pl-10">
           <div className="lft-cntnr flex flex-col justify-center items-center font-semibold">
             <div className="cntnt-i text-5xl font-bold">
-              Grow Your buisness <br /> <span className="pl-20">with</span>
+              <span className="text-3xl text-red-800">My </span>Name is <br />
               <br />
-              <span className="pl-6 text-blue-400 hover:text-5xl">
-                Nayem Sarkar
+              <span className="pl-2 text-blue-400">Nayem Sarkar</span> <br />
+              <span className="text-3xl"> and i am a </span>{" "}
+              <span className="text-3xl text-red-800">
+                front-end Web Developer
               </span>
             </div>
-            <div className="cntnt-ii font-light text-gray-800 mt-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Accusantium magni quaerat, accusamus <br /> reprehenderit eveniet
-              tempora?
-            </div>
+
             <div className="cntnt-iii mt-8 pr-[260px]">
               <NavLink to="about">
                 {" "}
@@ -36,10 +34,10 @@ const Home = () => {
               </NavLink>
             </div>
           </div>
-          <div className="right cntnr ">
+          <div className="right cntnr sm:bg-black sm:mt-8">
             <img
               src={web}
-              className="mt-[20%] pl-11 rounded-xl h-1/2 w-2/3 animate-pulse  ease-in-out duration-1000  hover:scale-150"
+              className="sm:h-52 sm:bg-black sm:pl-52 sm:mt-[60px] pl-11 rounded-xl md:h-[370px]"
               alt=""
             />
           </div>

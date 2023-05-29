@@ -16,7 +16,7 @@ function contact() {
   return (
     <>
       <Header />
-      <div className="flex justify-center items-center h-screen bg-gray-100">
+      <div className="flex justify-center items-center h-screen bg-black">
         <div className="w-full max-w-md">
           <div className="flex justify-center mb-4 text-3xl font-semibold text-green-400">
             Contact us

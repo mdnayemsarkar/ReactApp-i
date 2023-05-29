@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../src/image/david-boca-ZqJqC-S9sfc-unsplash.jpg";
-import img2 from "../src/image/jared-rice-UwzalTDCpT4-unsplash.jpg";
-import img3 from "../src/image/naja-bertolt-jensen-9Djr2KuNyA8-unsplash.jpg";
-import img4 from "../src/image/talia-cohen-i5FsBOLsB50-unsplash.jpg";
-import img5 from "../src/image/david-boca-ZqJqC-S9sfc-unsplash.jpg";
-import img6 from "../src/image/yannis-papanastasopoulos-U6dnImauDAE-unsplash.jpg";
+// import img1 from "../src/image/david-boca-ZqJqC-S9sfc-unsplash.jpg";
+// import img2 from "../src/image/jared-rice-UwzalTDCpT4-unsplash.jpg";
+// import img3 from "../src/image/naja-bertolt-jensen-9Djr2KuNyA8-unsplash.jpg";
+// import img4 from "../src/image/talia-cohen-i5FsBOLsB50-unsplash.jpg";
+// import img5 from "../src/image/david-boca-ZqJqC-S9sfc-unsplash.jpg";
+// import img6 from "../src/image/yannis-papanastasopoulos-U6dnImauDAE-unsplash.jpg";
 import Card from "./Card";
 import Sdata from "./Sdata";
 import Header from "./Header";
@@ -12,10 +12,10 @@ function Service() {
   return (
     <>
       <Header />
-      <div className="hdr flex justify-center mt-14 mb-8 text-3xl font-bold text-green-400">
+      <div className="hdr bg-black text-white flex justify-center mt-12 mb-8 text-3xl font-bold  sm:mb-8 sm:bg-black">
         This is our Services Page
       </div>
-      <div className="grid grid-cols-3 gap-8 p-14">
+      <div className="bg-black md:grid md:grid-cols-3 md:gap-8 md:p-14 sm:grid-cols-1 pl-8 pr-8">
         {Sdata.map((val, ind) => {
           return <Card key={ind} imgsrc={val.imgsrc} title={val.title} />;
         })}
