@@ -10,7 +10,7 @@ import { redirect } from "react-router-dom";
 function Routs() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/home",
       element: <Home />,
       exact: true,
     },
