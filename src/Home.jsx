@@ -7,14 +7,14 @@ import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <body className=" bg-black text-white h-screen sm:bg-black sm:text-white sm:h-screen sm:w-screen">
+      <body className=" bg-black text-white md:h-screen sm:bg-black sm:text-white sm:h-full sm:w-full">
         <Header />
         {/* ....................header part ends here ......................*/}
 
         {/* ...................body section starts here....................... */}
 
         <div className="bg-black container grid grid-cols-1 items-center mt-10  md:grid md:grid-cols-2 md:items-center pl-10">
-          <div className="lft-cntnr flex flex-col justify-center items-center font-semibold">
+          <div className="lft-cntnr flex flex-col justify-center items-center font-semibold sm:mb-56 md:mb-0 mt-14">
             <div className="cntnt-i text-5xl font-bold">
               <span className="text-3xl text-red-800">My </span>Name is <br />
               <br />
@@ -34,10 +34,11 @@ const Home = () => {
               </NavLink>
             </div>
           </div>
-          <div className="right cntnr sm:bg-black sm:mt-8">
+          {/* image  */}
+          <div className="right cntnr">
             <img
               src={web}
-              className="sm:h-52 sm:bg-black sm:pl-52 sm:mt-[60px] pl-11 rounded-xl md:h-[370px]"
+              className="md:w-auto md:pl-52 md:mt-[60px] rounded-xl md:h-[370px]"
               alt=""
             />
           </div>
